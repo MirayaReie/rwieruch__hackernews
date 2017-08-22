@@ -9,7 +9,7 @@ const SORTS = {
   NONE: list => list,
   TITLE: list => sortBy(list, 'title'),
   AUTHOR: list => sortBy(list, 'author'),
-  DATE: list => list, // TODO!!!
+  DATE: list => sortBy(list, 'created_at').reverse(),
   COMMENTS: list => sortBy(list, 'num_comments').reverse(),
   POINTS: list => sortBy(list, 'points').reverse()
 };
