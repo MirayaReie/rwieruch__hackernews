@@ -2,7 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
-import App, { Search, Button, Table } from './App';
+
+import App from './App';
+import Search from './components/Search';
+import Table from './components/Table';
+import Button from './components/Button';
 
 // for refs testing
 function createNodeMock(element) {
